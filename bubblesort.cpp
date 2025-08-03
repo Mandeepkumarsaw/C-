@@ -7,7 +7,7 @@ class bubblesort {
         for(int i=0;i<n-1;i++){
             bool isSwap = false;                //Optimization---track if the arr is already sorted or not
             for(int j=0;j<n-i-1;j++){  //O(1*n)
-                if(arr[j] > arr[j+1]){   //O(n*n)
+                if(arr[j] > arr[j+1]){   //O(n*n)    **for desc order--arr[j] < arr[j+1]
                     swap(arr[j],arr[j+1]);
                     isSwap = true;               //true means it run until lst ele which is i<(n-1) is swap or not 
                 }
