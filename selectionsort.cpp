@@ -8,7 +8,7 @@ class selectionsort {
         for(int i=0; i<n-1; i++){
             int smallIdx = i;
             for(int j=i+1; j<n; j++){
-                if(arr[j] < arr[smallIdx])  smallIdx=j;
+                if(arr[j] < arr[smallIdx])  smallIdx=j;     //*desc order -- arr[j] > arr[smallIdx]
                 } 
               swap(arr[i],arr[smallIdx]);
             }
