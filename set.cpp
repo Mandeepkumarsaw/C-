@@ -20,5 +20,24 @@ int main(){
      }
      cout<<endl;
 
+    
+
+
+
+
+     set<int> s2 = {10, 20, 30, 40, 50};
+
+//LOWER BOUND
+    auto it = s2.lower_bound(25);   //if x is present then return but if doesn't return the ele just after x , here 30
+     cout<<*it<<endl;
+    auto it2 = s2.lower_bound(80);  //gives iterator of s.end(),here it is 5 or sometimes 0.
+     cout<<*it2<<endl;
+
+//UPPER BOUND
+   auto it3=s2.upper_bound(20);  //gives just nxt ele present after x=20, here 30
+   cout<<*it3<<endl;
+   auto it4=s2.upper_bound(50);  //gives  iterator of s.end(),here it's 5.
+   
+
      return 0;
 }
