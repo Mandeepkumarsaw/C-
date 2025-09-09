@@ -36,7 +36,7 @@ class mergesol {
 
     void mergesort(vector<int> &arr,int st,int end) {       ///main
 
-       if(st<end) {     
+       if(st<end) {            //implicit base case ie when st>=end ,it's not runs
          int mid = st+(end-st) / 2;
          //left half
          mergesort(arr,st,mid);
