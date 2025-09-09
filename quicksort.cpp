@@ -12,7 +12,7 @@ int partition(vector<int> &arr,int st , int end) {
     }
 
 
-   idx++;
+   idx++; 
    swap(arr[end],arr[idx]);                
     
    return idx;                 //return idx of pivot
