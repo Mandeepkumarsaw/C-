@@ -32,6 +32,6 @@ int main() {              //Ovverall TC = O(n^2)
 
     bubblesort obj;
     obj.bubbleSort(arr ,n);
-       obj.printArray(arr,n);
+    obj.printArray(arr,n);
     return 0;
 }
