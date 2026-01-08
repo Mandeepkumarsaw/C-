@@ -56,6 +56,39 @@ void postorder(Node* root) {
      cout<<root->data;
 }
 
+//Level Order Traversal
+void levelOrder(Node* root) {
+    queue<Node*> q;
+
+    q.push(root);
+    q.push(NULL);
+
+    while(q.size()>0){
+        Node* curr=q.front();
+        q.pop();
+
+        if(curr == NULL) {
+            if(!q.empty()) {
+                 cout<<endl;
+                 q.push(NULL);
+                 continue;
+            } else {
+                  break;
+            }
+        }
+        cout<<curr->data;
+
+        if(curr->left != nullptr) {
+            q.push(curr->left);
+        }
+        if(curr->right != nullptr) {
+            q.push(curr->right);
+        }
+
+    }
+
+    cout<<endl;
+}
 
 int main(){
      vector<int> preorder = {1,2,-1,-1,3,4,-1,-1,5,-1,-1};
@@ -76,6 +109,10 @@ int main(){
      cout<<"Postorder-";
      postorder(root);
      cout<<endl;
+
+     cout<<"Level order-";
+     levelOrder(root);
+     
 
 
      return 0;
