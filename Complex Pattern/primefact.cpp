@@ -13,7 +13,7 @@ int smallfactor(int val){
 }
 
 int main(){
-    int n =15;
+    int n = 15;
     cout<<smallfactor(n);
     return 0;
 }
