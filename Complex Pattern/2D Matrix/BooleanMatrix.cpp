@@ -76,6 +76,12 @@ int main () {
 			cout<<matrix[i][j]<<" ";
 		}cout<<endl;
 	}
+
+	// for(auto &ele : matrix){
+	// 	for(int e:ele){
+	// 		cout<<e<<" ";
+	// 	}
+	// }
 	
 	return 0;
 }	
